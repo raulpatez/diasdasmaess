@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia das Mães</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tela" id="tela-senha">
+        <h1>Boas Vindas, Mamães!</h1>
+        <img src="imagens/3D2D7E58-B54D-4807-BD31-1C2427CD225C.jpeg.jpeg" class="img-pagina" alt="Tela Senha">
+        <div class="senha-box">
+            <input type="password" id="inputSenha" readonly>
+            <div class="teclado">
+                <button>1</button><button>2</button><button>3</button>
+                <button>4</button><button>5</button><button>6</button>
+                <button>7</button><button>8</button><button>9</button>
+                <button>*</button><button>0</button><button id="apagar">⌫</button>
+            </div>
+            <button id="verificar">Confirmar</button>
+        </div>
+    </div>
+
+    <div class="tela escondido" id="tela-presente">
+        <img src="imagens/07260A8A-1BED-4FFF-8D7F-057DF193FD7D.jpeg.jpeg" class="img-pagina" alt="Presente">
+        <button onclick="mostrarPremio()">PRESENTE</button>
+    </div>
+
+    <div class="tela escondido" id="tela-premio">
+        <h2>VOCÊ GANHOU UM DIA NO SPA!</h2>
+        <ul>
+            <li>Massagem relaxante corporal</li>
+            <li>Massagem epicraniana</li>
+            <li>Massagem nos pés</li>
+            <li>Revitalização facial com massagem e máscara facial</li>
+            <li>Banho em ofurô com pétalas de rosas</li>
+            <li>Sais aromáticos</li>
+            <li>Maca aquecida para os dias frios</li>
+            <li>Aromaterapia no ambiente</li>
+            <li>Degustação com chá e biscoito</li>
+        </ul>
+        <button onclick="irParaReacao()">Ver Reação</button>
+    </div>
+
+    <div class="tela escondido" id="tela-reacao">
+        <img src="imagens/reacao.png.jpeg" class="img-pagina" alt="Reação">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
